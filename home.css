@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+body{
+    background-image: url(teste.png);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    transition: 0.5s;
+    color: white;
+    transition: 0.5s;
+}
+
+.darkBody{
+    background-image: url(dark.png);
+    transition: 0,5s;
+}
+
+p{
+    color: white;
+}
+
+.cabecario{
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    display: flex;
+    width: 100vw;
+    background-color: #225ED7;
+    transition: 0.5s;
+}
+
+.cabecarioDark{
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    display: flex;
+    width: 100vw;
+    background-color: black;
+    border-top: solid white 1px;
+}
+
+.backBtnHome{
+    background-color: #58a551;
+    width: 10vw;
+    font-size: 30px;
+    font-family: monospace;
+    transition: 0.5s;
+}
+
+.backBtnHomeDark{
+    background-color: black;
+    width: 10vw;
+    font-size: 30px;
+    font-family: monospace;
+    border-right: solid 1px white;
+}
+
+.backBtnHome button{
+    height: 10px;
+    width: 10px;
+    border: none;
+    margin-top: 5px;
+    background-color: transparent;
+    display: flex;
+    cursor: pointer;
+    margin-left: 1vw;
+}
+
+.backBtnHome button p{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.cabecarioItens{
+    width: 75vw;
+    display: flex;
+    margin-top: 5px;
+    gap: 20px;
+}
+
+.cabecarioItens button{
+    background-color: transparent;
+    border: none;
+}
+
+#A1{
+    margin-left: 20px;
+}
+
+.backBtnDark{
+    width: 15vw;
+    background-color: #139ED7;
+    transition: 0.5s;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    font-family: monospace;
+    display: flex;
+}
+
+.backBtnDark div{
+    margin-right: 10px;
+}
+
+.backBtnDarkMode{
+    width: 15vw;
+    background-color: black;
+    border-left: solid 1px white;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    display: flex;
+}
+
+.backBtnDark div{
+    margin-left: 20px;
+}
+
+
+#modArquivo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 80%;
+    background-color: #0655FE;
+    border: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cabecarioArquivo{
+    height: 7%;
+    display: flex;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.modLogo{
+    width: 1000px;
+}
+
+.cabecarioArquivo div{
+    display: flex;
+    align-self: center;
+}
+
+.cabecarioArquivo div p{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.btnArquivoCabecario button{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.btnArquivoCabecario button:hover{
+    color: blue;
+}
+
+#btn1{
+    background-color: transparent;
+    text-align: center;
+    margin-right: 5px;
+}
+
+#btn2{
+    background-color: red;
+    text-align: center;
+}
+
+
+.conteudoArquivo{
+    margin: 0;
+    background-color: #eeecdd;
+    width: 100%;
+    height: 94%;
+}
+
+#modArquivo footer{
+    position: absolute;
+    bottom: 3px;
+    height: 50px;
+    background-color: #eeecdd;
+    width: 96.8%;
+    border-top: solid 1px black;
+}
+
+#modArquivo footer span{
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.ArquivoText{
+    padding: 20px;
+}
+
+.ArquivoText p{
+    color: black;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.ArquivoText div{
+    margin-top: 25px;
+    line-height: 30px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#modInternet{
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 85%;
+    background-color: #5B8FCB;
+    border: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.btnInternetCabecario{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#Inter1{
+    gap: 60vw;
+}
+
+#InterTxt{
+    font-size: 30px;
+    margin-left: 10px;
+    color: white;
+    font-family: monospace;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formInter{
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: solid black 1px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#Contato{
+    margin-bottom: 20px;
+}
+

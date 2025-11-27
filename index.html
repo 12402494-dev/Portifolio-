@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stiles/home.css">
+    <script src="stiles/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <section class="cabecario">
+        <div class="backBtnHome">
+            <button><img src="stiles/logo.png" alt="" height="40px"><p>Start</p></button>
+        </div>
+
+        <div class="cabecarioItens">
+            <button><img src="stiles/internet.png" alt=""  height="50px" id="A1" onclick="mod2()"></button>
+            <button onclick="mod1()"><img src="stiles/arquivo.png" alt=""   height="50px"></button>
+        </div>
+
+        <div class="backBtnDark">
+            <div>
+                <label class="switch">
+                <input type="checkbox" onclick="Darkmode()">
+                <span class="slider round"></span>
+                </label>
+            </div>
+            <label for="">DarkMode</label>
+        </div>
+    </section>
+
+    <dialog id="modArquivo">
+        <div class="cabecarioArquivo">
+            <div class="modLogo">
+                <img src="stiles/arquivo.png" alt="" height="35px">
+                <p>Meus Arquivos</p>
+            </div>
+            <div class="btnArquivoCabecario">
+                <button id="btn1" onclick="Closemod1()">_</button>
+                <button id="btn2" onclick="Closemod1()">X</button>
+            </div>
+
+            
+        </div>
+
+        <div class="conteudoArquivo">
+
+            <div class="ArquivoText">
+                <p>Olá! Meu nome é Arthur Ferreira Alves Almeida tenho 17. Atualmente curso o 2º ano do ensino médio no Cotemig, onde estudo programação e desenvolvo habilidades em HTML, CSS, JavaScript e C#.</p>
+                <div>
+                    <p>Meus contatos são:</p>
+                    <p>• Telefone: (31) 98443-5711</p>
+                    <p>• GitHub: <a href="https://github.com/arthuFerreira0/Portfolio-Front">https://github.com/arthuFerreira0/Portfolio-Front</a></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <span id="typing"></span>
+        </footer>
+    </dialog>
+
+    <dialog id="modInternet">
+        <div class="cabecarioArquivo" id="Inter1">
+            <div class="modLogo">
+                <img src="stiles/internet.png" alt="" height="45px">
+                <pi id="InterTxt">Internet Explorer</p>
+            </div>
+            <div class="btnArquivoCabecario">
+                <button id="btn1" onclick="Closemod2()">_</button>
+                <button id="btn2" onclick="Closemod2()">X</button>
+            </div>
+        </div>
+
+        <div class="conteudoArquivo">
+            <div class="formInter">
+                <label for="">formulário de contato</label>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="f79cfb9c-010e-40f5-881e-42cfa46c2f21">
+                <label for="">Nome</label>
+                <input type="text" name="Nome" required>
+                <label for="">Telefone</label>
+                <input type="text" name="Telefone" id="telefone" oninput="mascara_telefone ()" required>
+                <label for="">Email</label>
+                <input type="email" name="Email" required>
+                <label for="">Motivo do contato</label>
+                <textarea name="message" required></textarea>
+                <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    
+
+
+    
+</body>
+
+</html>
+
